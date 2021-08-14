@@ -387,6 +387,13 @@ body{
             
         }
 
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            background-color: rgba(0,0,0,0.5) !important;
+        }
+
         .text-input{
             width: 100%;
             
