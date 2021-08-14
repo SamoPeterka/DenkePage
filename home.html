@@ -226,29 +226,25 @@
 				<h3 class="text-with-lines pb-4">Contact me</h3>
 				
 				<div class="contact-form-box">
-					<form
-					action="https://formspree.io/f/mqkwgawg"
-					method="POST"
-					>
-					<div class="row mb-3">
-						<div class="col-md-6 col-sm-12">
-							<label class="text-input">
-								<input placeholder="Name*"  type="text" name="_name" required>
-							</label>
+					<form name="contact" method="POST" data-netlify="true">
+						<div class="row mb-3">
+							<div class="col-md-6 col-sm-12">
+								<label class="text-input"> 
+									<input placeholder="Name*" type="text" name="name" required/>
+								</label>   
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<label class="text-input">
+									<input placeholder="Email*" type="email" name="email" required/>
+								</label>
+							</div>
 						</div>
-						<div class="col-md-6 col-sm-12">
-							<label class="text-input">
-								<input placeholder="Email*" type="email" name="_replyto" required>
-							</label>
-						</div>
-					</div>
-	
-	
-					<label  class="textarea mb-4">
-						<textarea placeholder="Message*" name="message"></textarea required>
-					</label>
 
-					<button type="submit">Send</button>
+						<label class="textarea mb-4">
+							<textarea placeholder="Message*" name="message"></textarea>
+						</label>
+
+						<button type="submit">Send</button>
 					</form>
 				</div>
 			</div>
