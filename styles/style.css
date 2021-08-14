@@ -397,7 +397,6 @@ body h5, body h6 {
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  display: flex;
 }
 .form-submitted-container .form-submitted-inner {
   width: auto;
@@ -405,8 +404,9 @@ body h5, body h6 {
   border: 1px solid white;
   margin: auto;
 }
+
 .form-submitted-container.active {
-  display: block;
+  display: flex;
 }
 
 .box-shadow-light {
