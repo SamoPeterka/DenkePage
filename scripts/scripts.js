@@ -100,7 +100,7 @@ $(document).ready(function(){
       });
 
     var formConfModal = document.getElementById('form-conformation');
-    
+
     const handleSubmit = (e) => {
       
       e.preventDefault()
@@ -118,7 +118,7 @@ $(document).ready(function(){
     document.querySelector("form").addEventListener("submit", handleSubmit);
 
     $('body').click(function (event){
-      if(!$(event.target).closest('#form-conformation').length && !$(event.target).is('#formConfModalInner')) {
+      if($(event.target).closest('#form-conformation').length && !$(event.target).is('#formConfModalInner')) {
         formConfModal.classList.remove('active');
       }     
    });
