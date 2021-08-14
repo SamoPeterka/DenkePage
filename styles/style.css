@@ -32,30 +32,33 @@ body h5, body h6 {
   /* Transition effect when sliding down (and up) */
   transition: background-color, 0.5s;
 }
-.navbar-top nav button {
-  right: 0;
+.navbar-top nav .container button {
+  float: right;
 }
-.navbar-top nav .navbar-collapse ul {
+.navbar-top nav .container button:focus {
+  box-shadow: none;
+}
+.navbar-top nav .container .navbar-collapse ul {
   position: relative;
   width: 100%;
   justify-content: center;
 }
-.navbar-top nav .navbar-collapse ul li {
+.navbar-top nav .container .navbar-collapse ul li {
   width: 33%;
   text-align: center;
 }
-.navbar-top nav .navbar-collapse ul li a {
+.navbar-top nav .container .navbar-collapse ul li a {
   color: grey;
   transition: color 0.3s;
   transition-timing-function: ease-in-out;
   font-weight: 400;
   font-size: 18px;
 }
-.navbar-top nav .navbar-collapse ul li a:hover {
+.navbar-top nav .container .navbar-collapse ul li a:hover {
   color: white !important;
 }
 @media (max-width: 991px) {
-  .navbar-top nav .navbar-collapse ul li {
+  .navbar-top nav .container .navbar-collapse ul li {
     width: 100%;
   }
 }
@@ -90,9 +93,14 @@ body h5, body h6 {
 }
 .banner h1 {
   width: 100%;
-  font-size: 35px;
+  font-size: 25px;
   text-shadow: 2px 1px 4px black;
   transition: font-size 0.4s ease-in-out;
+}
+@media (min-width: 576px) {
+  .banner h1 {
+    font-size: 35px;
+  }
 }
 @media (min-width: 768px) {
   .banner h1 {
@@ -299,8 +307,13 @@ body h5, body h6 {
   align-items: center;
 }
 .references .card-slide-in .card .band-name h4 {
-  font-size: 50px;
+  font-size: 30px;
   text-shadow: 0px 0px 5px black;
+}
+@media (min-width: 576px) {
+  .references .card-slide-in .card .band-name h4 {
+    font-size: 35px;
+  }
 }
 @media (min-width: 768px) {
   .references .card-slide-in .card .band-name h4 {

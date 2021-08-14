@@ -36,34 +36,40 @@ body{
         background-color: transparent;
         transition: top 0.5s; /* Transition effect when sliding down (and up) */
         transition:  background-color, 0.5s;
+        .container{
 
-        button{
-            right: 0;
-        }
-        .navbar-collapse ul{
-            position: relative;
-            width: 100%;
-            justify-content: center;
-        
-            li{
-                width: 33%;
-                text-align: center;
-                
-                a{
-                    color: grey;
-                    transition: color .3s;
-                    transition-timing-function: ease-in-out;
-                    font-weight: 400;
-                    font-size: 18px;  
+            button{
+                float: right;
 
-                    &:hover{
-                        color: rgba(255,255,255,1) !important;
-                    }
+                &:focus{
+                    box-shadow: none; 
                 }
-
-                @media (max-width: 991px){
-                    width: 100%;
-
+            }
+            .navbar-collapse ul{
+                position: relative;
+                width: 100%;
+                justify-content: center;
+            
+                li{
+                    width: 33%;
+                    text-align: center;
+                    
+                    a{
+                        color: grey;
+                        transition: color .3s;
+                        transition-timing-function: ease-in-out;
+                        font-weight: 400;
+                        font-size: 18px;  
+    
+                        &:hover{
+                            color: rgba(255,255,255,1) !important;
+                        }
+                    }
+    
+                    @media (max-width: 991px){
+                        width: 100%;
+    
+                    }
                 }
             }
         }
@@ -108,9 +114,13 @@ body{
 
     h1{
         width:100%;
-        font-size: 35px;
+        font-size: 25px;
         text-shadow: 2px 1px 4px black;
         transition: font-size .4s ease-in-out;
+
+        @media(min-width: 576px){
+            font-size: 35px;
+        }
 
         @media(min-width: 768px){
             font-size: 50px;
@@ -344,8 +354,12 @@ body{
                 align-items: center;
                 
                 h4{
-                    font-size: 50px;
+                    font-size: 30px;
                     text-shadow: 0px 0px 5px black;
+
+                    @media(min-width: 576px){
+                        font-size: 35px;
+                    }
 
                     @media(min-width: 768px){
                         font-size: 35px;
