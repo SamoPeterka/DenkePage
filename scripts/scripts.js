@@ -99,9 +99,6 @@ $(document).ready(function(){
         slideinOnScroll.observe(slider)
       });
 
-
-    document.querySelector("form").addEventListener("submit", handleSubmit);
-
     const handleSubmit = (e) => {
       e.preventDefault()
       let myForm = document.getElementById('contact-form');
@@ -113,4 +110,6 @@ $(document).ready(function(){
       }).then(() => console.log('Form successfully submitted')).catch((error) =>
         alert(error))
     }
+
+    document.querySelector("form").addEventListener("submit", handleSubmit);
 });
