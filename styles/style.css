@@ -461,7 +461,7 @@ body h5, body h6 {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.8s;
   transition-timing-function: ease-in;
 }
 
