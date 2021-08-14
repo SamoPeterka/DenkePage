@@ -103,7 +103,7 @@ $(document).ready(function(){
 
       const handleSubmit = (e) => {
         e.preventDefault()
-        let myForm = document.getElementById('pizzaOrder');
+        let myForm = document.getElementById('contact-form');
         let formData = new FormData(myForm)
         fetch('/', {
           method: 'POST',
