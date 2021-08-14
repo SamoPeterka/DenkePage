@@ -99,8 +99,10 @@ $(document).ready(function(){
         slideinOnScroll.observe(slider)
       });
 
+    var formConfModal = document.getElementById('form-conformation');
+    
     const handleSubmit = (e) => {
-      var formConfModal = document.getElementById('form-conformation');
+      
       e.preventDefault()
       let myForm = document.getElementById('contact-form');
       let formData = new FormData(myForm)
@@ -108,9 +110,9 @@ $(document).ready(function(){
         method: 'POST',
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString()
-      }).then(() => {formConfModal.classList.add('active')}).catch(function(e) {
-        console.error(e.message);
-      })
+        }).then(() => {formConfModal.classList.add('active')}).catch(function(e) {
+          console.error(e.message);
+        })
     }
 
     document.querySelector("form").addEventListener("submit", handleSubmit);
