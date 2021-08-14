@@ -340,6 +340,12 @@ body h5, body h6 {
   padding: 0.5rem 1rem;
   width: 100%;
 }
+.contact-form .contact-form-box input:-webkit-autofill,
+.contact-form .contact-form-box input:-webkit-autofill:hover,
+.contact-form .contact-form-box input:-webkit-autofill:focus,
+.contact-form .contact-form-box input:-webkit-autofill:active {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
 .contact-form .contact-form-box .text-input {
   width: 100%;
 }
