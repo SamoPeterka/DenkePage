@@ -386,6 +386,29 @@ body h5, body h6 {
   }
 }
 
+.form-submitted-container {
+  display: none;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+}
+.form-submitted-container .form-submitted-inner {
+  width: auto;
+  height: auto;
+  border: 1px solid white;
+  margin: auto;
+}
+.form-submitted-container.active {
+  display: block;
+}
+
 .box-shadow-light {
   box-shadow: rgba(138, 135, 135, 0.45) 0px 0px 15px;
 }

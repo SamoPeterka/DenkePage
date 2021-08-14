@@ -99,6 +99,8 @@ $(document).ready(function(){
         slideinOnScroll.observe(slider)
       });
 
+
+    var formConfModal = document.getElementById('form-conformation');
     const handleSubmit = (e) => {
       e.preventDefault()
       let myForm = document.getElementById('contact-form');
@@ -107,9 +109,14 @@ $(document).ready(function(){
         method: 'POST',
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString()
-      }).then(() => console.log('Form successfully submitted')).catch((error) =>
-        alert(error))
+      }).then(() => {formConfModal.classList.add('active')}, {})
     }
 
     document.querySelector("form").addEventListener("submit", handleSubmit);
+
+    $('body').click(function (event){
+      if(!$(event.target).closest('#form-conformation').length && !$(event.target).is('#form-conformation')) {
+        formConfModal.classList.remove('active');
+      }     
+   });
 });
