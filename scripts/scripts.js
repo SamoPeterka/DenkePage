@@ -13,6 +13,7 @@ $(document).ready(function(){
         autoplay: false,
         autoplayHoverPause: true,
         dots: false,
+        lazyload: true,
     });
 
     $('.owl-carousel-banner').owlCarousel({
@@ -32,12 +33,12 @@ $(document).ready(function(){
 
     window.onscroll = function(){
         if (window.pageYOffset >=200){
-            navbar.classList.add("my-bg-black");
+            navbar.classList.add("my-bg-black-nav");
             navbar.classList.remove("my-bg-transparent");            
         }
         else {
             navbar.classList.add("my-bg-transparent");
-            navbar.classList.remove("my-bg-black");           
+            navbar.classList.remove("my-bg-black-nav");           
         }
 
         var currentScrollPos = window.pageYOffset;
