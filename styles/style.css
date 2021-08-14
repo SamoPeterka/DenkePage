@@ -1,0 +1,491 @@
+body {
+  color: white;
+  position: relative;
+  background: black;
+  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%);
+  background-attachment: fixed;
+}
+body a, body p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+body h1, body h2, body h3, body h4 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+}
+body h5, body h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+/* NAVBAR */
+.navbar-top {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+}
+.navbar-top nav {
+  background-color: transparent;
+  transition: top 0.5s;
+  /* Transition effect when sliding down (and up) */
+  transition: background-color, 0.5s;
+}
+.navbar-top nav button {
+  right: 0;
+}
+.navbar-top nav .navbar-collapse ul {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+.navbar-top nav .navbar-collapse ul li {
+  width: 33%;
+  text-align: center;
+}
+.navbar-top nav .navbar-collapse ul li a {
+  color: grey;
+  transition: color 0.3s;
+  transition-timing-function: ease-in-out;
+  font-weight: 400;
+  font-size: 18px;
+}
+.navbar-top nav .navbar-collapse ul li a:hover {
+  color: white !important;
+}
+@media (max-width: 991px) {
+  .navbar-top nav .navbar-collapse ul li {
+    width: 100%;
+  }
+}
+
+/* FOOTER */
+.footer {
+  height: 250px;
+  margin-top: 8rem !important;
+}
+.footer .footer-inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ELEMENTS */
+.banner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/banner.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner h1 {
+  width: 100%;
+  font-size: 35px;
+  text-shadow: 2px 1px 4px black;
+  transition: font-size 0.4s ease-in-out;
+}
+@media (min-width: 768px) {
+  .banner h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .banner h1 {
+    font-size: 65px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner h1 {
+    font-size: 75px;
+  }
+}
+@media (min-width: 1400px) {
+  .banner h1 {
+    font-size: 85px;
+  }
+}
+.banner .fog-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url("../images/172-1728277_transparent-foggy-png-transparent-fog-png-download.png");
+  background-size: 200%;
+  background-position: 0 top;
+  -webkit-animation: fogAnim 60s;
+          animation: fogAnim 60s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes fogAnim {
+  0% {
+    background-position: -200% bottom;
+  }
+  100% {
+    background-position: 0% bottom;
+  }
+}
+@keyframes fogAnim {
+  0% {
+    background-position: -200% bottom;
+  }
+  100% {
+    background-position: 0% bottom;
+  }
+}
+
+.testimonial {
+  color: white;
+}
+.testimonial img {
+  width: 100%;
+  height: auto;
+}
+.testimonial .about-me-outer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.testimonial .about-me-outer .read-more {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.testimonial .about-me-outer .read-more a {
+  text-decoration: none;
+  border: 1px solid grey;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  transition: border-color 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.testimonial .about-me-outer .read-more a:hover {
+  border-color: white;
+}
+
+.services-slider .item {
+  background-size: cover;
+}
+.services-slider .item .carousel-inner {
+  min-width: 100%;
+  height: 400px;
+}
+.services-slider .item .carousel-inner .slider-column {
+  position: relative;
+  background: rgba(97, 92, 92, 0.5);
+  background: linear-gradient(80deg, rgba(97, 92, 92, 0.5) 0%, rgba(97, 92, 92, 0.05) 100%);
+}
+.services-slider .item .carousel-inner .slider-column .slider-textbox {
+  margin-bottom: 3rem !important;
+}
+.services-slider .item .carousel-inner .slider-column .read-more {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.services-slider .item .carousel-inner .slider-column .read-more a {
+  text-decoration: none;
+  border: 1px solid grey;
+  color: white;
+  padding: 0.25rem 0.3rem;
+  transition: border-color 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.services-slider .item .carousel-inner .slider-column .read-more a:hover {
+  border-color: white;
+}
+
+.services-left-right .arrow {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.services-left-right .arrow .ar-right {
+  height: 70%;
+  width: 70%;
+  margin: auto;
+}
+.services-left-right .arrow .ar-right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.services-left-right .arrow .ar-left {
+  height: 70%;
+  width: 70%;
+  margin: auto;
+}
+.services-left-right .arrow .ar-left img {
+  transform: rotate(180deg);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.services-left-right .column-text {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.services-left-right .column-text .column-text-inner {
+  background-color: #0e0e0e;
+  margin: auto;
+}
+
+/* About page*/
+.about-me-inner p {
+  text-align: justify;
+}
+.about-me-inner img {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
+}
+
+.music .accordion-item {
+  background-color: transparent !important;
+  border: none;
+}
+.music .accordion-item .accordion-header button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  box-shadow: rgba(138, 135, 135, 0.45) 0px 0px 15px;
+}
+.music .accordion-item .accordion-header button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.music .accordion-item .accordion-header button:focus {
+  border: none;
+  box-shadow: none;
+}
+.music .accordion-item .accordion-body div {
+  display: none;
+}
+
+.references .card-slide-in {
+  width: 100%;
+  height: 100%;
+}
+.references .card-slide-in .card {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  justify-content: center;
+  text-align: center;
+}
+.references .card-slide-in .card .band-name {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.references .card-slide-in .card .band-name h4 {
+  font-size: 50px;
+  text-shadow: 0px 0px 5px black;
+}
+@media (min-width: 768px) {
+  .references .card-slide-in .card .band-name h4 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  .references .card-slide-in .card .band-name h4 {
+    font-size: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  .references .card-slide-in .card .band-name h4 {
+    font-size: 29px;
+  }
+}
+@media (min-width: 1400px) {
+  .references .card-slide-in .card .band-name h4 {
+    font-size: 35px;
+  }
+}
+
+.contact-form .contact-form-box {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .contact-form .contact-form-box {
+    width: 60%;
+  }
+}
+.contact-form .contact-form-box input, .contact-form .contact-form-box textarea {
+  color: white;
+  border: 1px solid white;
+  box-shadow: rgba(138, 135, 135, 0.45) 0px 0px 5px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.contact-form .contact-form-box .text-input {
+  width: 100%;
+}
+.contact-form .contact-form-box .text-input input {
+  width: 100%;
+}
+.contact-form .contact-form-box .textarea {
+  width: 100%;
+  height: 250px;
+}
+.contact-form .contact-form-box .textarea textarea {
+  width: 100%;
+  height: 100%;
+}
+.contact-form .contact-form-box button {
+  max-width: 100%;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+@media (max-width: 767px) {
+  .contact-form .contact-form-box button {
+    width: 100%;
+  }
+}
+
+.box-shadow-light {
+  box-shadow: rgba(138, 135, 135, 0.45) 0px 0px 15px;
+}
+
+.my-bg-black {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  transition: background-color 0.5s ease;
+}
+
+.my-bg-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.5s ease;
+}
+
+.text-shadow-dark {
+  text-shadow: 2px 1px 4px black;
+}
+
+.text-shadow-light {
+  text-shadow: 2px 1px 4px white;
+}
+
+.my-6 {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+
+.text-with-lines:before {
+  content: "";
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+  right: 0.5em;
+}
+.text-with-lines:after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+  left: 0.5em;
+}
+
+/* OWL CAROUSEL  */
+.banner-slider {
+  margin-bottom: 4rem;
+}
+.banner-slider .owl-carousel-banner .item {
+  height: 450px;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .no-mobile {
+    display: none;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s;
+  transition-timing-function: ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.slide-in {
+  transform: translateY(35%);
+  transition: transform 0.6s ease-in;
+}
+
+.slide-first {
+  transition-delay: 0s;
+}
+
+.slide-seccond {
+  transition-delay: 0s;
+}
+@media (min-width: 768px) {
+  .slide-seccond {
+    transition-delay: 0.1s;
+  }
+}
+
+.slide-third {
+  transition-delay: 0s;
+}
+@media (min-width: 992px) {
+  .slide-third {
+    transition-delay: 0.2s;
+  }
+}
+
+.slide-fourth {
+  transition-delay: 0s;
+}
+@media (min-width: 768px) {
+  .slide-fourth {
+    transition-delay: 0.2s;
+  }
+}
+@media (min-width: 992px) {
+  .slide-fourth {
+    transition-delay: 0.3s;
+  }
+}
+
+.slide-in.appear {
+  transform: translateY(0);
+}/*# sourceMappingURL=style.css.map */
