@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+}
+
 $myblack: #0e0e0e;
 
 body{
@@ -8,9 +13,9 @@ body{
     background-attachment: fixed;
 
     a, p{
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: 18px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 100;
+        font-size: 17px;
     }
 
     h1, h2, h3, h4 {
@@ -41,6 +46,7 @@ body{
 
             button{
                 float: right;
+                border-radius: 0px;
 
                 &:focus{
                     box-shadow: none; 
@@ -57,7 +63,8 @@ body{
                     
                     a{
                         font-family: 'Cinzel', serif;
-                        color: grey;
+                        color: #8e8e8e;
+                        text-shadow: rgb(0 0 0) 1px 1px 1px;
                         transition: color .3s;
                         transition-timing-function: ease-in-out;
                         font-weight: 400;
@@ -99,6 +106,16 @@ body{
             i{
                 font-size: 1.6em;
             }
+
+            a{
+                color: white;
+                transition: color .3s ease-in-out;
+
+                &:hover{
+                    cursor: pointer;
+                    color: grey;
+                }
+            }
         }
     }
   
@@ -110,7 +127,7 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/test2.jpg");
+    background-image: url("../images/banner.jpg");
     height: 100vh;
     background-repeat:no-repeat;
     background-size:cover;
@@ -187,20 +204,6 @@ body{
             position: absolute;
             bottom: 0px;
             right: 0px;
-
-            a{
-                text-decoration: none;
-                border: 1px solid grey;
-                color: white;           
-                padding: .25rem .5rem;
-
-                transition: border-color .2s;
-                transition-timing-function: ease-in-out;
-
-                &:hover{
-                    border-color: white;
-                }
-            }
         }
 
     }
@@ -433,19 +436,31 @@ body{
             }
         }
         
-        button{
-            max-width: 100%;
-            background-color: transparent; 
-            border: 1px solid white; 
-            color: white;
-            padding: .5rem 2rem;
-
-            @media (max-width: 767px){
-                width: 100%;
+        .submit-btn-container{
+            text-decoration: none;
+            border: 1px solid grey;
+            color: white;           
+            padding: .5rem .5rem;
+    
+            transition: border-color .2s;
+            transition-timing-function: ease-in-out;
+            width: 100%;
+            &:hover{
+                border-color: white;
+            }
+            button{
+                font-family: 'Cinzel', serif;
+                background-color: transparent;
+                font-size: 20px;
+                color: white;
+                border: none;
+    
+                @media (max-width: 767px){
+                    width: 100%;
+                }
             }
         }
     }
-
 }
 
 .form-submitted-container{
@@ -476,6 +491,23 @@ body{
 }
 
 //Other custom stuff
+
+.my-btn{
+    a{
+        text-decoration: none;
+        border: 1px solid grey;
+        color: white;           
+        padding: .25rem .5rem;
+
+        transition: border-color .2s;
+        transition-timing-function: ease-in-out;
+
+        &:hover{
+            border-color: white;
+        }
+    }
+
+}
 .box-shadow-light{
     box-shadow: rgb(138 135 135 / 45%) 0px 0px 15px;
 }

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Roboto Slab", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+}
 body {
   color: white;
   position: relative;
@@ -6,9 +10,9 @@ body {
   background-attachment: fixed;
 }
 body a, body p {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 100;
+  font-size: 17px;
 }
 body h1, body h2, body h3, body h4 {
   font-family: "Cinzel", serif;
@@ -35,6 +39,7 @@ body h5, body h6 {
 }
 .navbar-top nav .container button {
   float: right;
+  border-radius: 0px;
 }
 .navbar-top nav .container button:focus {
   box-shadow: none;
@@ -50,7 +55,8 @@ body h5, body h6 {
 }
 .navbar-top nav .container .navbar-collapse ul li a {
   font-family: "Cinzel", serif;
-  color: grey;
+  color: #8e8e8e;
+  text-shadow: black 1px 1px 1px;
   transition: color 0.3s;
   transition-timing-function: ease-in-out;
   font-weight: 400;
@@ -83,6 +89,14 @@ body h5, body h6 {
 .footer .footer-inner .footer-content i {
   font-size: 1.6em;
 }
+.footer .footer-inner .footer-content a {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+.footer .footer-inner .footer-content a:hover {
+  cursor: pointer;
+  color: grey;
+}
 
 /* ELEMENTS */
 .banner {
@@ -90,7 +104,7 @@ body h5, body h6 {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/test2.jpg");
+  background-image: url("../images/banner.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,17 +192,6 @@ body h5, body h6 {
   position: absolute;
   bottom: 0px;
   right: 0px;
-}
-.testimonial .about-me-outer .read-more a {
-  text-decoration: none;
-  border: 1px solid grey;
-  color: white;
-  padding: 0.25rem 0.5rem;
-  transition: border-color 0.2s;
-  transition-timing-function: ease-in-out;
-}
-.testimonial .about-me-outer .read-more a:hover {
-  border-color: white;
 }
 
 .services-slider .item {
@@ -380,15 +383,27 @@ body h5, body h6 {
   width: 100%;
   height: 100%;
 }
-.contact-form .contact-form-box button {
-  max-width: 100%;
-  background-color: transparent;
-  border: 1px solid white;
+.contact-form .contact-form-box .submit-btn-container {
+  text-decoration: none;
+  border: 1px solid grey;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0.5rem;
+  transition: border-color 0.2s;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+}
+.contact-form .contact-form-box .submit-btn-container:hover {
+  border-color: white;
+}
+.contact-form .contact-form-box .submit-btn-container button {
+  font-family: "Cinzel", serif;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  border: none;
 }
 @media (max-width: 767px) {
-  .contact-form .contact-form-box button {
+  .contact-form .contact-form-box .submit-btn-container button {
     width: 100%;
   }
 }
@@ -418,6 +433,18 @@ body h5, body h6 {
 .form-submitted-container.active {
   visibility: visible;
   opacity: 1;
+}
+
+.my-btn a {
+  text-decoration: none;
+  border: 1px solid grey;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  transition: border-color 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.my-btn a:hover {
+  border-color: white;
 }
 
 .box-shadow-light {
