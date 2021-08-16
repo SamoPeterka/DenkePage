@@ -27,7 +27,8 @@ body h5, body h6 {
   z-index: 1000;
 }
 .navbar-top nav {
-  background-color: transparent;
+  background: black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4542191877) 0%, rgba(0, 0, 0, 0.3057598039) 74%, rgba(175, 175, 175, 0.0256477591) 100%);
   transition: top 0.5s;
   /* Transition effect when sliding down (and up) */
   transition: background-color, 0.5s;
@@ -48,6 +49,7 @@ body h5, body h6 {
   text-align: center;
 }
 .navbar-top nav .container .navbar-collapse ul li a {
+  font-family: "Cinzel", serif;
   color: grey;
   transition: color 0.3s;
   transition-timing-function: ease-in-out;
@@ -74,6 +76,9 @@ body h5, body h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer .footer-inner p {
+  font-family: "Cinzel", serif;
 }
 
 /* ELEMENTS */

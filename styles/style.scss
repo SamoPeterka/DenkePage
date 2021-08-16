@@ -33,7 +33,8 @@ body{
     
 
     nav{
-        background-color: transparent;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,0.4542191876750701) 0%, rgba(0,0,0,0.30575980392156865) 74%, rgba(175,175,175,0.025647759103641476) 100%);
         transition: top 0.5s; /* Transition effect when sliding down (and up) */
         transition:  background-color, 0.5s;
         .container{
@@ -55,6 +56,7 @@ body{
                     text-align: center;
                     
                     a{
+                        font-family: 'Cinzel', serif;
                         color: grey;
                         transition: color .3s;
                         transition-timing-function: ease-in-out;
@@ -90,6 +92,9 @@ body{
         justify-content: center;
         align-items: center;
 
+        p{
+            font-family: 'Cinzel', serif;
+        }
   
     }
   
