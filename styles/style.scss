@@ -91,11 +91,15 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        .footer-content{
+            p{
+                font-family: 'Cinzel', serif;
+            }
 
-        p{
-            font-family: 'Cinzel', serif;
+            i{
+                font-size: 1.6em;
+            }
         }
-  
     }
   
   }

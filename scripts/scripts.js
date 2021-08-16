@@ -110,7 +110,17 @@ $(document).ready(function(){
         method: 'POST',
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString()
-        }).then(() => {formConfModal.classList.add('active')}).catch(function(e) {
+        }).then(() => {
+          formConfModal.classList.add('active');
+          var inputName = document.getElementById("inputName");
+          var inputEmail = document.getElementById("inputEmail");
+          var inputMessage = document.getElementById("inputMessage");
+
+          inputName.value = "";
+          inputEmail.value = "";
+          inputMessage = "";
+          
+        }).catch(function(e) {
           console.error(e.message);
         })
     }

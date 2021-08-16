@@ -77,8 +77,11 @@ body h5, body h6 {
   justify-content: center;
   align-items: center;
 }
-.footer .footer-inner p {
+.footer .footer-inner .footer-content p {
   font-family: "Cinzel", serif;
+}
+.footer .footer-inner .footer-content i {
+  font-size: 1.6em;
 }
 
 /* ELEMENTS */

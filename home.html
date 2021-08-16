@@ -20,7 +20,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
-
+	
+	<script src="https://use.fontawesome.com/942baf67a0.js"></script>	
 	<script
   		src="https://code.jquery.com/jquery-3.6.0.min.js"
   		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -247,18 +248,18 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-12 mb-3">
 								<label class="text-input"> 
-									<input placeholder="Name*" type="text" name="name" required/>
+									<input id="nameInput" placeholder="Name*" type="text" name="name" required/>
 								</label>   
 							</div>
 							<div class="col-md-6 col-sm-12 mb-3">
 								<label class="text-input">
-									<input placeholder="Email*" type="email" name="email" required/>
+									<input id="emailInput" placeholder="Email*" type="email" name="email" required/>
 								</label>
 							</div>
 						</div>
 
 						<label class="textarea mb-4">
-							<textarea placeholder="Message*" name="message" required></textarea>
+							<textarea id="contactInput" placeholder="Message*" name="message" required></textarea>
 						</label>
 
 						<button type="submit">Send</button>
@@ -269,9 +270,16 @@
 	</div>
 	<div class="footer fade-in">
 		<div class="footer-inner my-bg-black text-center">
-			<p>	&copy; Denile productions, 2021</p>
-			<i class="fab fa-facebook-square fa-2x px-1"></i>
-			<i class="fab fa-instagram fa-2x px-1"></i>
+			<div class="footer-content">
+				<p>	&copy; Denile productions, 2021</p>
+				<div class="footer-icons">
+					<a><i class="fa fa-facebook-square px-1"></i></a>
+					<a><i class="fa fa-instagram px-1"></i></a>
+					<a><i class="fa fa-envelope px-1"></i></a>
+					<a><i class="fa fa-soundcloud px-1"></i></a>
+					<a><i class="fa fa-youtube px-1"></i></a>
+				</div>
+			</div>
 		</div>
 	</div>
 	
