@@ -25,6 +25,7 @@ $(document).ready(function(){
         slideTransition: 'linear',
         autoplayHoverPause: false,
         dots: false,
+        lazyload: true,
     });
 
     //Hide navbar on scroll and change color

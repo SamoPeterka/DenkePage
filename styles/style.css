@@ -55,7 +55,7 @@ body h5, body h6 {
 }
 .navbar-top nav .container .navbar-collapse ul li a {
   font-family: "Cinzel", serif;
-  color: #a0a0a0;
+  color: #d4d4d4;
   text-shadow: black 1px 1px 1px;
   transition: color 0.3s;
   transition-timing-function: ease-in-out;
