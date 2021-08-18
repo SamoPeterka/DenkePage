@@ -10,10 +10,10 @@ $(document).ready(function(){
     $('.owl-carousel-slider').owlCarousel({
         loop:true,
         items: 1,
-        autoplay: false,
+        autoplay: true,
         autoplayHoverPause: true,
+        slideTransition: 'ease',
         dots: false,
-        lazyload: true,
     });
 
     $('.owl-carousel-banner').owlCarousel({
@@ -22,10 +22,9 @@ $(document).ready(function(){
         autoplay: true,
         autoplayTimeout: 5000,
         autoplaySpeed: 1200,
-        slideTransition: 'linear',
+        
         autoplayHoverPause: false,
         dots: false,
-        lazyload: true,
     });
 
     //Hide navbar on scroll and change color
@@ -134,3 +133,4 @@ $(document).ready(function(){
       }     
    });
 });
+
