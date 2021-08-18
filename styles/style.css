@@ -124,25 +124,22 @@ body h5, body h6 {
 
 /* ELEMENTS */
 .banner {
+  position: relative;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/banner_low.jpg");
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
 }
-@media (min-width: 768px) {
-  .banner {
-    background-image: url("../images/banner_progressive.jpeg");
-  }
+.banner img {
+  flex-shrink: 0;
+  width: 100vw;
+  min-height: auto;
 }
 .banner h1 {
+  position: absolute;
+  margin: auto;
   width: 100%;
   font-size: 25px;
   text-shadow: 2px 1px 4px black;
@@ -224,7 +221,15 @@ body h5, body h6 {
 }
 
 .services-slider .item {
+  position: relative;
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.services-slider .item img {
+  position: absolute;
+  width: 100%;
 }
 .services-slider .item .carousel-inner {
   min-width: 100%;

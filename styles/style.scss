@@ -150,26 +150,23 @@ body{
 
 /* ELEMENTS */
 .banner {
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/banner_low.jpg");
     height: 100vh;
-    background-repeat:no-repeat;
-    background-size:cover;
+    overflow: hidden;
 
-    @media(min-width: 768px){
-        background-image: url("../images/banner_progressive.jpeg");
+    img{
+        flex-shrink: 0;
+        width: 100vw;
+        min-height: auto;
     }
 
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
     h1{
+        position: absolute;
+        margin: auto;
         width:100%;
         font-size: 25px;
         text-shadow: 2px 1px 4px black;
@@ -244,7 +241,15 @@ body{
 //Services slider
 .services-slider{
     .item{
+        position: relative;
         background-size: cover;
+        object-fit: cover;
+        overflow: hidden;;
+
+        img{
+            position: absolute;
+            width: 100%;
+        }
 
         .carousel-inner{
             min-width: 100%;
