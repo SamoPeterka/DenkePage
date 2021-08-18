@@ -589,11 +589,19 @@ body{
 
 /* OWL CAROUSEL  */
 .banner-slider{
-    margin-bottom: 4rem; 
+    height: 450px;
+    margin-bottom: 4rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     .owl-carousel-banner{
         .item{
             height: 450px;
             background-size:cover;
+        }
+        @media(max-width: 767px){
+            display: none;
         }
     }
 }
