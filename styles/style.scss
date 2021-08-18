@@ -594,11 +594,11 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     .owl-carousel-banner{
         .item{
             height: 450px;
-            background-size:cover;
+            background-size:cover;  
         }
         @media(max-width: 767px){
             display: none;

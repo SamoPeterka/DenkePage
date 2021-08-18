@@ -513,11 +513,20 @@ body h5, body h6 {
 
 /* OWL CAROUSEL  */
 .banner-slider {
+  height: 450px;
   margin-bottom: 4rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .banner-slider .owl-carousel-banner .item {
   height: 450px;
   background-size: cover;
+}
+@media (max-width: 767px) {
+  .banner-slider .owl-carousel-banner {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
