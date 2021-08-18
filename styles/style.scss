@@ -601,7 +601,7 @@ body{
             background-size:cover;  
         }
         @media(max-width: 767px){
-            display: none;
+            display: none !important;
         }
     }
 }

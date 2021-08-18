@@ -525,7 +525,7 @@ body h5, body h6 {
 }
 @media (max-width: 767px) {
   .banner-slider .owl-carousel-banner {
-    display: none;
+    display: none !important;
   }
 }
 
