@@ -154,10 +154,14 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/banner_progressive.jpeg");
+    background-image: url("../images/banner_low.jpeg");
     height: 100vh;
     background-repeat:no-repeat;
     background-size:cover;
+
+    @media(min-width: 768px){
+        background-image: url("../images/banner_progressive.jpeg");
+    }
 
 
     background-attachment: fixed;

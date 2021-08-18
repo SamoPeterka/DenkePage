@@ -128,7 +128,7 @@ body h5, body h6 {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/banner_progressive.jpeg");
+  background-image: url("../images/banner_low.jpeg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,6 +136,11 @@ body h5, body h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .banner {
+    background-image: url("../images/banner_progressive.jpeg");
+  }
 }
 .banner h1 {
   width: 100%;
