@@ -451,9 +451,11 @@ body{
             object-fit: fill;
             justify-content: center;
             text-align: center;
+            transition: transform ease-in-out .4s;
 
             &:hover{
                 cursor: pointer;
+                transform: scale(1.05);
             }
     
             .band-name{
