@@ -160,7 +160,8 @@ body{
     overflow: hidden;
     background-repeat:no-repeat;
     background-size:cover;
-    transition: height 999999s;  
+    transition: height 999999s;
+    background-attachment: fixed;
 
     h1{
         position: absolute;
