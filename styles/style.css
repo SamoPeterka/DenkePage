@@ -5,10 +5,7 @@
 body {
   color: white;
   background: black;
-  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
-  height: 120%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%);
 }
 body a, body p {
   font-family: "Roboto Slab", serif;
