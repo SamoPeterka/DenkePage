@@ -69,6 +69,11 @@ body h5, body h6 {
   }
 }
 
+.main-content {
+  background: black;
+  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
+}
+
 /* FOOTER */
 .footer {
   position: relative;
@@ -131,7 +136,6 @@ body h5, body h6 {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: height 999999s;
   background-attachment: fixed;
 }
 .banner h1 {
