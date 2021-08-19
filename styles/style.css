@@ -404,9 +404,11 @@ body h5, body h6 {
   text-align: center;
   transition: transform ease-in-out 0.4s;
 }
-.references .card-slide-in .card:hover {
-  cursor: pointer;
-  transform: scale(1.05);
+@media (min-width: 768px) {
+  .references .card-slide-in .card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 }
 .references .card-slide-in .card .band-name {
   position: absolute;
