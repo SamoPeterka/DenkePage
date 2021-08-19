@@ -181,9 +181,6 @@ body h5, body h6 {
   align-items: center;
   height: 300px;
   overflow: hidden;
-  transition: height ease-in-out;
-  transition-duration: 10s;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

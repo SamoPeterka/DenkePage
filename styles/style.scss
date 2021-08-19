@@ -5,6 +5,7 @@
 
 $myblack: #0e0e0e;
 
+
 body{
     color: white; 
     background: rgb(0,0,0);
@@ -202,10 +203,7 @@ body{
     align-items: center;
     height: 300px;
     overflow: hidden;
-    transition: height ease-in-out;
-    transition-duration: 10s;
     
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
