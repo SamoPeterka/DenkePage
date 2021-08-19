@@ -505,6 +505,10 @@ body h5, body h6 {
   margin-bottom: 6rem !important;
 }
 
+.pt-6 {
+  padding-top: 6rem !important;
+}
+
 .text-with-lines:before {
   content: "";
   background-color: #fff;
@@ -530,7 +534,6 @@ body h5, body h6 {
 /* OWL CAROUSEL  */
 .banner-slider {
   height: 450px;
-  margin-bottom: 4rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
