@@ -172,6 +172,55 @@ body h5, body h6 {
   }
 }
 
+.about-banner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-banner h1 {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  font-size: 25px;
+  text-shadow: 2px 1px 4px black;
+  transition: font-size 0.4s ease-in-out;
+}
+@media (min-width: 576px) {
+  .about-banner h1 {
+    font-size: 33px;
+  }
+}
+@media (min-width: 768px) {
+  .about-banner h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .about-banner h1 {
+    font-size: 65px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-banner h1 {
+    font-size: 75px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-banner h1 {
+    font-size: 85px;
+  }
+}
+
 .testimonial {
   color: white;
 }
