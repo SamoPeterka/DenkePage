@@ -135,21 +135,6 @@ $(document).ready(function(){
         formConfModal.classList.remove('active');
       }     
    });
-
-   var bg = $("#homepage-banner");
-
-    function resizeBackground() {
-        bg.height($(window).height());
-    }
-
-    $(window).resize(resizeBackground);
-    resizeBackground();
 });
 
-window.addEventListener("load",function() {
-  setTimeout(function(){
-      // This hides the address bar:
-      window.scrollTo(0, 1);
-  }, 0);
-});
 
