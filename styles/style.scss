@@ -196,12 +196,16 @@ body{
 }
 
 .about-banner {
+    width: 100%;
+    height: 300px;
+    .about-inner{
+    background-image: url('images/about_banner_opti.png');
     position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 100%;
     overflow: hidden;
     
     background-position: center;
@@ -211,6 +215,7 @@ body{
     img{
         max-width: 100%;
     }
+}
 }
 
 //Testimonial block
