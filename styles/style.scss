@@ -451,6 +451,10 @@ body{
             object-fit: fill;
             justify-content: center;
             text-align: center;
+
+            &:hover{
+                cursor: pointer;
+            }
     
             .band-name{
                 position: absolute;

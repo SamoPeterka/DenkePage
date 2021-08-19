@@ -403,6 +403,9 @@ body h5, body h6 {
   justify-content: center;
   text-align: center;
 }
+.references .card-slide-in .card:hover {
+  cursor: pointer;
+}
 .references .card-slide-in .card .band-name {
   position: absolute;
   width: 100%;
