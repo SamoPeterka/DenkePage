@@ -133,12 +133,6 @@ body h5, body h6 {
   background-size: cover;
   transition: height 999999s;
   background-attachment: fixed;
-  transition: height 900000s;
-}
-@media (max-width: 767px) {
-  .banner {
-    height: calc(100vh + 60px);
-  }
 }
 .banner h1 {
   position: absolute;
