@@ -125,7 +125,7 @@ $(document).ready(function(){
         })
     }
 
-    if($("form") != null){
+    if($("form").length != null){
       document.querySelector("form").addEventListener("submit", handleSubmit);
     }
 
