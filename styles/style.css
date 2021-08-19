@@ -7,12 +7,6 @@ body {
   position: relative;
   background: black;
   background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
-  transition: height 900000s;
-}
-@media (max-width: 767px) {
-  body {
-    height: calc(100vh + 60px);
-  }
 }
 body a, body p {
   font-family: "Roboto Slab", serif;
@@ -189,16 +183,10 @@ body h5, body h6 {
   align-items: center;
   height: 300px;
   overflow: hidden;
-  transition: height 999999s;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 767px) {
-  .about-banner {
-    height: calc(100vh + 60px);
-  }
 }
 .about-banner img {
   max-width: 100%;
