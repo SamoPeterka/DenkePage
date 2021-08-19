@@ -51,7 +51,7 @@ $(document).ready(function(){
     }
 
     const fadeinOptions = {
-        threshold: .25,
+        threshold: .02,
         rootMargin: "0px 0px 0px 0px"
       };
       
