@@ -125,7 +125,10 @@ $(document).ready(function(){
         })
     }
 
-    document.querySelector("form").addEventListener("submit", handleSubmit);
+    if($("form") != Null){
+      document.querySelector("form").addEventListener("submit", handleSubmit);
+    }
+
 
     $('body').click(function (event){
       if($(event.target).closest('#form-conformation').length && !$(event.target).is('#formConfModalInner')) {
