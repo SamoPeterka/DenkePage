@@ -5,9 +5,6 @@
 
 $myblack: #0e0e0e;
 
-html {
-    overflow: hidden;
-}
 
 body{
     color: white; 
@@ -15,8 +12,6 @@ body{
     background: rgb(0,0,0);
     background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(76,82,79,1) 33%, rgba(0,0,0,1) 50%, rgba(76,82,79,1) 66%, rgba(0,0,0,1) 100%);
     background-attachment: fixed;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling:touch;   
 
     a, p{
         font-family: 'Roboto Slab', serif;
