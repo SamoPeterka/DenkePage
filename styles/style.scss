@@ -200,7 +200,7 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 450px;
     background-repeat:no-repeat;
     background-size:cover;
     overflow: hidden;
@@ -210,6 +210,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 
+    img{
+        max-width: 100%;
+    }
 }
 
 //Testimonial block
