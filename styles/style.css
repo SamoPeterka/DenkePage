@@ -2,12 +2,18 @@
   font-family: "Roboto Slab", serif;
   src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 }
+html {
+  overflow: hidden;
+}
+
 body {
   color: white;
   position: relative;
   background: black;
   background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%);
   background-attachment: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 body a, body p {
   font-family: "Roboto Slab", serif;
@@ -130,11 +136,7 @@ body h5, body h6 {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -179,8 +181,6 @@ body h5, body h6 {
   justify-content: center;
   align-items: center;
   height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
   background-attachment: fixed;
   background-position: center;
