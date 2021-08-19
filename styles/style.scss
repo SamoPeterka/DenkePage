@@ -10,7 +10,8 @@ body{
     position: relative;
     background: rgb(0,0,0);
     background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(76,82,79,1) 33%, rgba(0,0,0,1) 50%, rgba(76,82,79,1) 66%, rgba(0,0,0,1) 100%) no-repeat center center fixed;
-    
+    transition: height 900000s;
+
     @media (max-width: 767px){
         height: calc(100vh + 60px);
     }
@@ -164,6 +165,11 @@ body{
     background-size:cover;
     transition: height 999999s;
     background-attachment: fixed;
+    transition: height 900000s;
+
+    @media (max-width: 767px){
+        height: calc(100vh + 60px);
+    }
 
     h1{
         position: absolute;
@@ -203,6 +209,10 @@ body{
     height: 300px;
     overflow: hidden;
     transition: height 999999s;  
+
+    @media (max-width: 767px){
+        height: calc(100vh + 60px);
+    }
     
     background-attachment: fixed;
     background-position: center;

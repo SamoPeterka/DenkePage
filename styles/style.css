@@ -7,6 +7,7 @@ body {
   position: relative;
   background: black;
   background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
+  transition: height 900000s;
 }
 @media (max-width: 767px) {
   body {
@@ -139,6 +140,12 @@ body h5, body h6 {
   background-size: cover;
   transition: height 999999s;
   background-attachment: fixed;
+  transition: height 900000s;
+}
+@media (max-width: 767px) {
+  .banner {
+    height: calc(100vh + 60px);
+  }
 }
 .banner h1 {
   position: absolute;
@@ -187,6 +194,11 @@ body h5, body h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 767px) {
+  .about-banner {
+    height: calc(100vh + 60px);
+  }
 }
 .about-banner img {
   max-width: 100%;
