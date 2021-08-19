@@ -135,5 +135,14 @@ $(document).ready(function(){
         formConfModal.classList.remove('active');
       }     
    });
+
+   var bg = $("#homepage-banner");
+
+    function resizeBackground() {
+        bg.height($(window).height());
+    }
+
+    $(window).resize(resizeBackground);
+    resizeBackground();
 });
 

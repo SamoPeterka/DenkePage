@@ -6,8 +6,7 @@ body {
   color: white;
   position: relative;
   background: black;
-  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%);
-  background-attachment: fixed;
+  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
 }
 body a, body p {
   font-family: "Roboto Slab", serif;
