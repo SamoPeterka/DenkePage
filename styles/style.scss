@@ -202,6 +202,8 @@ body{
     align-items: center;
     height: 300px;
     overflow: hidden;
+    transition: height ease-in-out;
+    transition-duration: 10s;
     
     background-attachment: fixed;
     background-position: center;
