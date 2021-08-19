@@ -8,7 +8,7 @@ body {
   background: black;
   background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
 }
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   body {
     height: calc(100vh + 60px);
   }
