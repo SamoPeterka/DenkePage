@@ -2,18 +2,16 @@
   font-family: "Roboto Slab", serif;
   src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 }
-@media (max-width: 767px) {
-  html {
-    height: calc(100% + 60px);
-    min-height: calc(100% + 60px);
-  }
-}
-
 body {
   color: white;
   position: relative;
   background: black;
   background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
+}
+@media (max-width: 800px) {
+  body {
+    height: calc(100vh + 60px);
+  }
 }
 body a, body p {
   font-family: "Roboto Slab", serif;
