@@ -336,6 +336,10 @@ body h5, body h6 {
   justify-content: center;
   align-items: center;
 }
+.references .card-slide-in .card .band-name img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .references .card-slide-in .card .band-name h4 {
   font-size: 30px;
   text-shadow: 0px 0px 5px black;
