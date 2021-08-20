@@ -208,6 +208,15 @@ body{
     width: 100%;
     height: 300px;
     overflow: hidden;
+
+    @media (min-width: 768px){
+        height: 450px;
+    }
+
+    
+    @media (min-width: 768px){
+        height: 550px;
+    }
     
     background-position: center center;
 
@@ -228,18 +237,25 @@ body{
         align-items: center;
         text-align: center;
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: auto;     
+            
+        .faded-hr-container{
+            .faded-hr{
+                margin: .35rem auto;
+                width: 65%;
+            }
+        }
 
         h1{
             display: inline-block;
             padding: 0 .5rem; 
             margin: auto;
-            font-size: 25px;
-            line-height: 27px;
+            font-size: 38px;
+            line-height: 35px;
             transition: font-size .4s ease-in-out;
 
             @media(min-width: 576px){
-                font-size: 36px;
+                font-size: 45px;
                 line-height: 38px;
             }
 
@@ -254,7 +270,7 @@ body{
             }
             @media(min-width: 1200px){
                 font-size: 78px;
-                line-height: 80px;
+                line-height: 70px;
             }
             @media(min-width: 1400px){
                 font-size: 88px;
@@ -265,25 +281,25 @@ body{
         h2{
             margin: auto;
             width:100%;
-            font-size: 20px;         
+            font-size: 25px;         
             transition: font-size .4s ease-in-out;
 
             @media(min-width: 576px){
-                font-size: 26px;
+                font-size: 28px;
             }
 
             @media(min-width: 768px){
-                font-size: 43px;
+                font-size: 32px;
             }
 
             @media(min-width: 992px){
-                font-size: 58px;
+                font-size: 35px;
             }
             @media(min-width: 1200px){
-                font-size: 68px;
+                font-size: 38px;
             }
             @media(min-width: 1400px){
-                font-size: 78px;
+                font-size: 47px;
             }
 
         }
