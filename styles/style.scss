@@ -488,6 +488,10 @@ body{
             img{
                 object-fit: cover;
 
+                @media(max-width: 767px){
+                    max-height: calc(100vw -var(--bs-gutter-x))
+                }
+
             }
 
             @media (min-width: 768px){
