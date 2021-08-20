@@ -152,7 +152,8 @@ body{
   }
 
 /* ELEMENTS */
-.banner {
+.home-banner {
+    background-image: url("/images/banner_sm.jpg");
     position: relative;
     display: flex;
     width: 100%;
@@ -168,8 +169,10 @@ body{
     
     /* Makes the image fixed in the viewport so that it doesn't move when
     the content height is greater than the image height */
-    //background-attachment: fixed;
-    
+    @media (min-width: 768px){
+        background-attachment: fixed;
+        background-image: url("/images/banner.jpg");
+    }
     /* This is what makes the background image rescale based on its     container's size */
     background-size: cover;
 
@@ -206,6 +209,7 @@ body{
 }
 
 .about-banner {
+    background-image: url("/images/about_sm.jpg");
     position: relative;
     display: flex;
     width: 100%;
@@ -214,10 +218,11 @@ body{
 
     @media (min-width: 768px){
         height: 450px;
+        background-image: url("/images/about.jpg");
     }
 
     
-    @media (min-width: 768px){
+    @media (min-width: 992px){
         height: 550px;
     }
     
@@ -228,7 +233,9 @@ body{
     
     /* Makes the image fixed in the viewport so that it doesn't move when
     the content height is greater than the image height */
-    background-attachment: fixed;
+    @media (min-width: 768px){
+        background-attachment: fixed;
+    }
     
     /* This is what makes the background image rescale based on its     container's size */
     background-size: cover;

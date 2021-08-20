@@ -126,7 +126,8 @@ body h5, body h6 {
 }
 
 /* ELEMENTS */
-.banner {
+.home-banner {
+  background-image: url("/images/banner_sm.jpg");
   position: relative;
   display: flex;
   width: 100%;
@@ -144,7 +145,13 @@ body h5, body h6 {
   background-position-x: 50%;
   background-position-y: 50%;
 }
-.banner h1 {
+@media (min-width: 768px) {
+  .home-banner {
+    background-attachment: fixed;
+    background-image: url("/images/banner.jpg");
+  }
+}
+.home-banner h1 {
   position: absolute;
   margin: auto;
   width: 100%;
@@ -153,32 +160,33 @@ body h5, body h6 {
   transition: font-size 0.4s ease-in-out;
 }
 @media (min-width: 576px) {
-  .banner h1 {
+  .home-banner h1 {
     font-size: 33px;
   }
 }
 @media (min-width: 768px) {
-  .banner h1 {
+  .home-banner h1 {
     font-size: 50px;
   }
 }
 @media (min-width: 992px) {
-  .banner h1 {
+  .home-banner h1 {
     font-size: 65px;
   }
 }
 @media (min-width: 1200px) {
-  .banner h1 {
+  .home-banner h1 {
     font-size: 75px;
   }
 }
 @media (min-width: 1400px) {
-  .banner h1 {
+  .home-banner h1 {
     font-size: 85px;
   }
 }
 
 .about-banner {
+  background-image: url("/images/about_sm.jpg");
   position: relative;
   display: flex;
   width: 100%;
@@ -189,18 +197,23 @@ body h5, body h6 {
   background-repeat: no-repeat;
   /* Makes the image fixed in the viewport so that it doesn't move when
   the content height is greater than the image height */
-  background-attachment: fixed;
   /* This is what makes the background image rescale based on its     container's size */
   background-size: cover;
 }
 @media (min-width: 768px) {
   .about-banner {
     height: 450px;
+    background-image: url("/images/about.jpg");
+  }
+}
+@media (min-width: 992px) {
+  .about-banner {
+    height: 550px;
   }
 }
 @media (min-width: 768px) {
   .about-banner {
-    height: 550px;
+    background-attachment: fixed;
   }
 }
 .about-banner .banner-text {
