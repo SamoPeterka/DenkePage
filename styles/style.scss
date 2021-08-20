@@ -453,6 +453,10 @@ body{
             text-align: center;
             transition: transform ease-in-out .4s;
 
+            img{
+                object-fit: cover;
+            }
+
             @media (min-width: 768px){
                 &:hover{
                     cursor: pointer;
@@ -467,10 +471,6 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                img{
-                    object-fit: cover;
-                }
                 
                 h4{
                     font-size: 30px;

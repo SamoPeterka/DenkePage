@@ -404,6 +404,10 @@ body h5, body h6 {
   text-align: center;
   transition: transform ease-in-out 0.4s;
 }
+.references .card-slide-in .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (min-width: 768px) {
   .references .card-slide-in .card:hover {
     cursor: pointer;
@@ -417,10 +421,6 @@ body h5, body h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.references .card-slide-in .card .band-name img {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .references .card-slide-in .card .band-name h4 {
   font-size: 30px;
