@@ -489,7 +489,7 @@ body{
                 object-fit: cover;
 
                 @media(max-width: 767px){
-                    max-height: calc(100vw -var(--bs-gutter-x))
+                    max-height: calc(100vw - var(--bs-gutter-x));
                 }
 
             }

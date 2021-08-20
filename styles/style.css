@@ -433,7 +433,7 @@ body h5, body h6 {
 }
 @media (max-width: 767px) {
   .references .card-slide-in .card img {
-    max-height: calc(100vw -var(--bs-gutter-x));
+    max-height: calc(100vw - var(--bs-gutter-x));
   }
 }
 @media (min-width: 768px) {
