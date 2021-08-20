@@ -414,7 +414,12 @@ body h5, body h6 {
 
 .references .card-slide-in {
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .references .card-slide-in {
+    height: calc(100vw - var(--bs-gutter-x));
+  }
 }
 .references .card-slide-in .card {
   position: relative;

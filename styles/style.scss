@@ -471,8 +471,12 @@ body{
 //Reference
 .references{
     .card-slide-in{
-        width: 100%; 
-        height: auto;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 767px){
+            height: calc(100vw - var(--bs-gutter-x));
+        }
+        
 
         .card{
             position: relative;
