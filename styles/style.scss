@@ -490,6 +490,11 @@ body{
 
             img{
                 object-fit: cover;
+
+                @media (max-width: 767px)
+                {
+                    object-fit: contain;
+                }
             }
 
             @media (min-width: 768px){

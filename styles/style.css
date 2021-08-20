@@ -436,6 +436,12 @@ body h5, body h6 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 767px) {
+  .references .card-slide-in .card img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 @media (min-width: 768px) {
   .references .card-slide-in .card:hover {
     cursor: pointer;
