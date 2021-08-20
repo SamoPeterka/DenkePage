@@ -8,9 +8,8 @@ $myblack: #0e0e0e;
 
 body{
     color: white; 
-    position: relative;
     background: rgb(0,0,0);
-    background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(76,82,79,1) 33%, rgba(0,0,0,1) 50%, rgba(76,82,79,1) 66%, rgba(0,0,0,1) 100%) no-repeat center center fixed;
+    background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(76,82,79,1) 33%, rgba(0,0,0,1) 50%, rgba(76,82,79,1) 66%, rgba(0,0,0,1) 100%);
 
     a, p{
         font-family: 'Roboto Slab', serif;
@@ -86,6 +85,10 @@ body{
     }
 }
 
+.main-content{
+    background: rgb(0,0,0);
+    background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(76,82,79,1) 33%, rgba(0,0,0,1) 50%, rgba(76,82,79,1) 66%, rgba(0,0,0,1) 100%) no-repeat center center fixed;
+}
 
 /* FOOTER */
 .footer {
@@ -160,8 +163,8 @@ body{
     overflow: hidden;
     background-repeat:no-repeat;
     background-size:cover;
-    transition: height 999999s;
     background-attachment: fixed;
+    background-position: center;
 
     h1{
         position: absolute;
@@ -196,20 +199,80 @@ body{
     position: relative;
     display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     height: 300px;
     overflow: hidden;
-    transition: height 999999s;  
     
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    img{
-        max-width: 100%;
-    }
+    .banner-text{
+        margin-left: auto;
+        margin-right:  auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        h1{
+            display: inline-block;
+            padding: 0 .5rem; 
+            margin: auto;
+            font-size: 25px;
+            line-height: 27px;
+            transition: font-size .4s ease-in-out;
+
+            @media(min-width: 576px){
+                font-size: 36px;
+                line-height: 38px;
+            }
+
+            @media(min-width: 768px){
+                font-size: 53px;
+                line-height: 55px;
+            }
+
+            @media(min-width: 992px){
+                font-size: 68px;
+                line-height: 70px;
+            }
+            @media(min-width: 1200px){
+                font-size: 78px;
+                line-height: 80px;
+            }
+            @media(min-width: 1400px){
+                font-size: 88px;
+                line-height: 90px;
+            }
+
+        }
+        h2{
+            margin: auto;
+            width:100%;
+            font-size: 20px;         
+            transition: font-size .4s ease-in-out;
+
+            @media(min-width: 576px){
+                font-size: 26px;
+            }
+
+            @media(min-width: 768px){
+                font-size: 43px;
+            }
+
+            @media(min-width: 992px){
+                font-size: 58px;
+            }
+            @media(min-width: 1200px){
+                font-size: 68px;
+            }
+            @media(min-width: 1400px){
+                font-size: 78px;
+            }
+
+        }
+}
 }
 
 //Testimonial block
@@ -255,7 +318,7 @@ body{
             .slider-column{
                 position: relative;
                 background: rgba(97, 92, 92,  0.5);
-                background: linear-gradient(80deg, rgba(97, 92, 92,  0.5)  0%,  rgba(97, 92, 92,  0.05)  100%);
+                background: linear-gradient(80deg, rgba(20, 20, 20, 0.5) 0%, rgba(15, 15, 15, 0.25) 100%);
 
                 .slider-textbox{
                     margin-bottom: 3rem !important;
@@ -385,9 +448,17 @@ body{
             background-color: transparent;
             width: 100%;
             height: 100%;
-            object-fit: fill;
+            object-fit: cover;
             justify-content: center;
             text-align: center;
+            transition: transform ease-in-out .4s;
+
+            @media (min-width: 768px){
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+            }
     
             .band-name{
                 position: absolute;
@@ -579,6 +650,10 @@ body{
 .mb-6{
     margin-bottom: 6rem !important;
 }
+.pt-6{
+    padding-top: 6rem !important;
+}
+
 
 
 //Text decorated with lines on each sisde
@@ -611,7 +686,6 @@ body{
 /* OWL CAROUSEL  */
 .banner-slider{
     height: 450px;
-    margin-bottom: 4rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

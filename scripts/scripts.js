@@ -13,6 +13,8 @@ $(document).ready(function(){
         autoplay: true,
         autoplayHoverPause: true,
         slideTransition: 'ease',
+        autoplaySpeed: 1400,
+        
         dots: false,
     });
 
@@ -20,8 +22,9 @@ $(document).ready(function(){
         loop:true,
         items: 1,
         autoplay: true,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1200,
+        autoplayTimeout: 3000,
+        slideTransition: 'ease',
+        autoplaySpeed: 1500,
         
         autoplayHoverPause: false,
         dots: false,
@@ -135,14 +138,6 @@ $(document).ready(function(){
         formConfModal.classList.remove('active');
       }     
    });
-
-   var bg = $("#homepage-banner");
-
-    function resizeBackground() {
-        bg.height($(window).height());
-    }
-
-    $(window).resize(resizeBackground);
-    resizeBackground();
 });
+
 

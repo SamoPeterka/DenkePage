@@ -4,9 +4,8 @@
 }
 body {
   color: white;
-  position: relative;
   background: black;
-  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
+  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%);
 }
 body a, body p {
   font-family: "Roboto Slab", serif;
@@ -68,6 +67,11 @@ body h5, body h6 {
   .navbar-top nav .container .navbar-collapse ul li {
     width: 100%;
   }
+}
+
+.main-content {
+  background: black;
+  background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%) no-repeat center center fixed;
 }
 
 /* FOOTER */
@@ -132,8 +136,8 @@ body h5, body h6 {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: height 999999s;
   background-attachment: fixed;
+  background-position: center;
 }
 .banner h1 {
   position: absolute;
@@ -173,18 +177,89 @@ body h5, body h6 {
   position: relative;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   height: 300px;
   overflow: hidden;
-  transition: height 999999s;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about-banner img {
-  max-width: 100%;
+.about-banner .banner-text {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.about-banner .banner-text h1 {
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin: auto;
+  font-size: 25px;
+  line-height: 27px;
+  transition: font-size 0.4s ease-in-out;
+}
+@media (min-width: 576px) {
+  .about-banner .banner-text h1 {
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+@media (min-width: 768px) {
+  .about-banner .banner-text h1 {
+    font-size: 53px;
+    line-height: 55px;
+  }
+}
+@media (min-width: 992px) {
+  .about-banner .banner-text h1 {
+    font-size: 68px;
+    line-height: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-banner .banner-text h1 {
+    font-size: 78px;
+    line-height: 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-banner .banner-text h1 {
+    font-size: 88px;
+    line-height: 90px;
+  }
+}
+.about-banner .banner-text h2 {
+  margin: auto;
+  width: 100%;
+  font-size: 20px;
+  transition: font-size 0.4s ease-in-out;
+}
+@media (min-width: 576px) {
+  .about-banner .banner-text h2 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) {
+  .about-banner .banner-text h2 {
+    font-size: 43px;
+  }
+}
+@media (min-width: 992px) {
+  .about-banner .banner-text h2 {
+    font-size: 58px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-banner .banner-text h2 {
+    font-size: 68px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-banner .banner-text h2 {
+    font-size: 78px;
+  }
 }
 
 .testimonial {
@@ -224,7 +299,7 @@ body h5, body h6 {
 .services-slider .item .carousel-inner .slider-column {
   position: relative;
   background: rgba(97, 92, 92, 0.5);
-  background: linear-gradient(80deg, rgba(97, 92, 92, 0.5) 0%, rgba(97, 92, 92, 0.05) 100%);
+  background: linear-gradient(80deg, rgba(20, 20, 20, 0.5) 0%, rgba(15, 15, 15, 0.25) 100%);
 }
 .services-slider .item .carousel-inner .slider-column .slider-textbox {
   margin-bottom: 3rem !important;
@@ -323,10 +398,17 @@ body h5, body h6 {
   background-color: transparent;
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   justify-content: center;
   text-align: center;
+  transition: transform ease-in-out 0.4s;
+}
+@media (min-width: 768px) {
+  .references .card-slide-in .card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 }
 .references .card-slide-in .card .band-name {
   position: absolute;
@@ -507,6 +589,10 @@ body h5, body h6 {
   margin-bottom: 6rem !important;
 }
 
+.pt-6 {
+  padding-top: 6rem !important;
+}
+
 .text-with-lines:before {
   content: "";
   background-color: #fff;
@@ -532,7 +618,6 @@ body h5, body h6 {
 /* OWL CAROUSEL  */
 .banner-slider {
   height: 450px;
-  margin-bottom: 4rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
