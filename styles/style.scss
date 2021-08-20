@@ -173,6 +173,9 @@ body{
     /* This is what makes the background image rescale based on its     container's size */
     background-size: cover;
 
+    background-position-x: 50%;
+    background-position-y: 50%;
+
     h1{
         position: absolute;
         margin: auto;
