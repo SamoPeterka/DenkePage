@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- created with sitemap-gen https://sitemap-gen.com/ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.soundoftoday.eu/</loc>
+		<lastmod>2021-08-21T13:29:57.2406777+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.soundoftoday.eu/home</loc>
+		<lastmod>2021-08-21T13:29:57.2406777+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.soundoftoday.eu/about</loc>
+		<lastmod>2021-08-21T13:29:57.2406777+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.soundoftoday.eu/music</loc>
+		<lastmod>2021-08-21T13:29:57.2406777+02:00</lastmod>
+	</url>
+	<url>
+		<loc>https://www.soundoftoday.eu/services</loc>
+		<lastmod>2021-08-21T13:29:57.2406777+02:00</lastmod>
+	</url>
+</urlset>

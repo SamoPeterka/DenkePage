@@ -120,9 +120,9 @@ $(document).ready(function(){
         body: new URLSearchParams(formData).toString()
         }).then(() => {
           formConfModal.classList.add('active');
-          var inputName = document.getElementById("inputName");
-          var inputEmail = document.getElementById("inputEmail");
-          var inputMessage = document.getElementById("inputMessage");
+          var inputName = document.getElementById("nameInput");
+          var inputEmail = document.getElementById("emailInput");
+          var inputMessage = document.getElementById("textInput");
 
           inputName.value = "";
           inputEmail.value = "";
