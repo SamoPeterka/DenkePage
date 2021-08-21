@@ -125,7 +125,7 @@ $(document).ready(function(){
 
           inputName.value = "";
           inputEmail.value = "";
-          inputMessage = "";
+          inputMessage.value = "";
           
         }).catch(function(e) {
           console.error(e.message);
