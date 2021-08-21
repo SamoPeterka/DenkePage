@@ -35,6 +35,9 @@ body h5, body h6 {
   /* Transition effect when sliding down (and up) */
   transition: background-color, 0.5s;
 }
+.navbar-top nav .container {
+  margin-bottom: 0.75rem;
+}
 .navbar-top nav .container button {
   float: right;
   border-radius: 0px;

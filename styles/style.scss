@@ -42,6 +42,7 @@ body{
         transition: top 0.5s; /* Transition effect when sliding down (and up) */
         transition:  background-color, 0.5s;
         .container{
+            margin-bottom: .75rem;
 
             button{
                 float: right;
