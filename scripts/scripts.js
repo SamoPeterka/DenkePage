@@ -132,11 +132,13 @@ $(document).ready(function(){
         })
     }
 
+    //Če obstaja contact form na strani poslušamo za klik na submit
+
     if($("form").length){
       document.querySelector("form").addEventListener("submit", handleSubmit);
     }
 
-
+    //Kjerkol kliknes razen v succesfully submited se zapre obvestilo
     $('body').click(function (event){
       if($(event.target).closest('#form-conformation').length && !$(event.target).is('#formConfModalInner')) {
         formConfModal.classList.remove('active');
