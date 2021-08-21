@@ -544,6 +544,7 @@ body h5, body h6 {
   border-color: white;
 }
 .contact-form .contact-form-box .submit-btn-container button {
+  width: 100%;
   font-family: "Cinzel", serif;
   background-color: transparent;
   font-size: 20px;
