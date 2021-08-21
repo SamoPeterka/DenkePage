@@ -45,7 +45,7 @@ $(document).ready(function(){
         }
 
         var currentScrollPos = window.pageYOffset;
-        console.log(prevScrollpos + "   " + currentScrollPos);
+
         if (prevScrollpos > currentScrollPos) {
           
             document.getElementById("navbar").style.top = "0";
@@ -53,7 +53,6 @@ $(document).ready(function(){
           if(window.pageYOffset > 300){
             document.getElementById("navbar").style.top = "-56px";
           }
-
         }
         prevScrollpos = currentScrollPos;
     }
