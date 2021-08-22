@@ -7,7 +7,7 @@ body {
   background: black;
   background: linear-gradient(124deg, black 0%, #4c524f 33%, black 50%, #4c524f 66%, black 100%);
 }
-body a, body p {
+body a, body p, body q {
   font-family: "Roboto Slab", serif;
   font-weight: 200;
   font-size: 17px;
@@ -305,19 +305,12 @@ body h5, body h6 {
 .testimonial {
   color: white;
 }
-.testimonial img {
-  width: 100%;
-  height: auto;
+.testimonial .quote {
+  text-align: center;
 }
-.testimonial .about-me-outer {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.testimonial .about-me-outer .read-more {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+.testimonial .author {
+  text-align: end;
+  font-style: italic;
 }
 
 .services-slider .item {
