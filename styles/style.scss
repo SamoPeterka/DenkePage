@@ -437,10 +437,8 @@ body{
     img{
         max-width: 350px;
         object-fit: contain;
-        margin-top: .25rem!important;
         margin-bottom: .5rem!important;
         margin-right: 1rem!important;
-        margin-left: 1rem!important;
 
         @media(max-width: 767px){
             max-width: 250px;
