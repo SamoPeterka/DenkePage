@@ -396,10 +396,18 @@ body h5, body h6 {
   text-align: justify;
 }
 .about-me-inner img {
+  max-width: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-top: 0.25rem !important;
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 0.5rem !important;
   margin-right: 1rem !important;
   margin-left: 1rem !important;
+}
+@media (max-width: 767px) {
+  .about-me-inner img {
+    max-width: 250px;
+  }
 }
 
 .music .accordion-item {
