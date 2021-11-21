@@ -402,6 +402,11 @@ body h5, body h6 {
   margin-bottom: 0.5rem !important;
   margin-right: 1rem !important;
 }
+@media (min-width: 992px) {
+  .about-me-inner img {
+    max-height: 250px;
+  }
+}
 @media (max-width: 767px) {
   .about-me-inner img {
     max-width: 100%;
