@@ -32,6 +32,7 @@ $(document).ready(function(){
 
     //Hide navbar on scroll and change color
     var navbar = document.getElementById("navbar");
+    var header = document.getElementById("header");
     var prevScrollpos = window.pageYOffset;
 
     window.onscroll = function(){
@@ -48,10 +49,10 @@ $(document).ready(function(){
 
         if (prevScrollpos > currentScrollPos) {
           
-            document.getElementById("navbar").style.top = "0";
+            document.getElementById("header").style.top = "0px";
         } else {
           if(window.pageYOffset > 300){
-            document.getElementById("navbar").style.top = "-56px";
+            document.getElementById("header").style.top = "-100px";
           }
         }
         prevScrollpos = currentScrollPos;
